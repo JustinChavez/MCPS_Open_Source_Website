@@ -1,0 +1,33 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Justin Chavez</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href= "{{ url_for('static', filename='default.css') }}"  />
+
+</head>
+    
+<body>
+<div id="header">
+	<h1>&nbsp;</h1>
+	
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/Projects">Projects</a></li>
+		<li><a href="/Research">Research</a></li>
+	</ul>
+</div>
+    <div id="content">
+	<div id="left">
+
+        {% block content %}{% endblock %}
+    	</div>
+</div>
+    </body>
+</html>
